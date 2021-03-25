@@ -19,7 +19,22 @@
     }
     @media screen and (max-width: 670px){
       header{
-        min-height: 500px;
+        min-height: 550px;
+      }
+      h2{
+        font-size: 32px;
+      }
+    }
+
+    @media screen and (max-width: 670px){
+      .maps {
+        max-height: 400px;
+      }
+    }
+
+    @media screen and (max-width: 670px){
+      .parallax-container{
+        max-height: 200px;
       }
     }
     .section{
@@ -32,13 +47,13 @@
     .tabs .tab a:focus, .tabs .tab a:focus.active{
       background: transparent;
     }
-    .frontText {
+    /* .frontText {
       background: rgba(0, 0, 0, .2);
       margin-top: 100px;
       color: white;
-    }
+    } */
     #map {
-      height: 70%;
+      height: 40%;
     }
   </style>
 </head>
@@ -76,12 +91,7 @@
     <div class="row">
       <div class="container col s12 l12 lighten-2 ">
         <div class="col s6 l6 offset-l3 lighten-2 frontText">
-          <h2 class="indigo-text text-darken-4">Discover Cambridge</h2>
-          <p>"The green tape grass rooted in the soft mud</p>
-          <p>Sways leisurely in the water;</p>  
-          <p>I am willing to be such a waterweed</p>  
-          <p>In the gentle flow of the River Cam."</p>  
-          <p>Taking Leave of Cambridge Again By Xu Zhi Mo</p>  
+          <h2 class="indigo-text text-darken-4">Discover Cambridge</h2> 
         </div>
       </div>
     </div>
@@ -214,7 +224,7 @@
   </section>
 
   <!-- google maps -->
-  <section class="container section scrollspy">
+  <section class="section container scrollspy maps">
     <div id="map"></div>
   </section>
 
